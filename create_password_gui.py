@@ -31,7 +31,7 @@ import pyperclip as pyperclip
 
 
 def main():
-    # ウィンドウの内容を定義する_
+    # ウィンドウの内容を定義する
     sg.theme("default1")  # テーマ色指定。sg.theme_previewer()を実行するとテーマ一覧が起動して確認できる
     choices = ("１：小文字", "２：小文字＋大文字", "３：小文字＋大文字＋数字", "４：小文字＋大文字＋数字＋記号", "５：数字")  # リストの中身
     layout = [[sg.Text(" ")], [sg.Text("パスワード文字数（6～24）"), sg.Input(size=(10, 1), default_text="8", key='-文字数-')],
